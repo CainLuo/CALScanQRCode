@@ -31,9 +31,7 @@
     if (self = [super init]) {
         
         self.frame = CGRectMake(0, CALNavigationBarHeight + CALStatusBarHeight, CALScreenWidth, CALScreenHeight - CALStatusBarHeight - CALNavigationBarHeight);
-        
-        self.backgroundColor = [UIColor blackColor];
-        
+                
         [self addSubview:self.scanQRCodePickBackgroundImageView];
         [self addSubview:self.tipsLabel];
         [self addSubview:self.lineImageView];
