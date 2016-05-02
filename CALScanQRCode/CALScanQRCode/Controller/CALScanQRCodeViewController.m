@@ -38,18 +38,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view addSubview:self.scanQRCodeTitleView];
     [self.view addSubview:self.cameraView];
+    [self.view addSubview:self.scanQRCodeTitleView];
     
-#if TARGET_IPHONE_SIMULATOR//模拟器
+#if TARGET_IPHONE_SIMULATOR
     
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"模拟器没有摄像头功能" message:@"请使用真机测试" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"好的", nil];
     
     [alertView show];
     
-#elif TARGET_OS_IPHONE//真机
+#elif TARGET_OS_IPHONE
+    
     [self initScanQRCode];
+    
 #endif
+    
 }
 
 #pragma mark - Init ScanQRCode

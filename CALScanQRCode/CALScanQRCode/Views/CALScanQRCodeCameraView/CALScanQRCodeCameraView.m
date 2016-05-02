@@ -50,7 +50,7 @@
     CALGetMethodReturnObjc(_scanQRCodePickBackgroundImageView);
     
     _scanQRCodePickBackgroundImageView       = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CALScanQRCode.bundle/scan_pick_bg"]];
-    _scanQRCodePickBackgroundImageView.frame = CGRectMake(self.center.x / 4, self.center.y * 3.5, CALScreenWidth - 80, CALScreenWidth - 80);
+    _scanQRCodePickBackgroundImageView.frame = CGRectMake(self.center.x / 4, self.center.y / 3.5, CALScreenWidth - 80, CALScreenWidth - 80);
     
     return _scanQRCodePickBackgroundImageView;
 }
@@ -60,7 +60,7 @@
     
     CALGetMethodReturnObjc(_tipsLabel);
     
-    _tipsLabel               = [[UILabel alloc] initWithFrame:CGRectMake(0, self.center.y * 3.5 + self.scanQRCodePickBackgroundImageView.frame.size.height + 30, CALScreenWidth, 30)];
+    _tipsLabel               = [[UILabel alloc] initWithFrame:CGRectMake(0, self.center.y / 3.5 + self.scanQRCodePickBackgroundImageView.frame.size.height + 30, CALScreenWidth, 30)];
     _tipsLabel.text          = @"业务二维码、充值卡条形码";
     _tipsLabel.textAlignment = NSTextAlignmentCenter;
     _tipsLabel.textColor     = [UIColor whiteColor];
@@ -74,7 +74,7 @@
     
     CALGetMethodReturnObjc(_lineImageView);
     
-    _lineImageView       = [[UIImageView alloc] initWithFrame:CGRectMake(50, self.center.y * 3.5, CALScreenWidth - 100, 4)];
+    _lineImageView       = [[UIImageView alloc] initWithFrame:CGRectMake(50, self.center.y / 3.5, CALScreenWidth - 100, 4)];
     _lineImageView.image = [UIImage imageNamed:@"CALScanQRCode.bundle/scan_line"];
     
     [self.scanQRCodePickBackgroundImageView addSubview:_lineImageView];
@@ -99,7 +99,6 @@
     
     self.scanQRCodePickBackgroundImageView.image = scanQRCodePickBackgroundImage;
 }
-
 
 #pragma mark - Set ScanQRCode Line Animation
 - (void)startAnimation {
