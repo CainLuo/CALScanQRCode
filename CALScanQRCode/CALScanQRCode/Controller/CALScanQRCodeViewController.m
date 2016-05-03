@@ -43,6 +43,8 @@
     
 #if TARGET_IPHONE_SIMULATOR
     
+    self.view.backgroundColor = [UIColor blackColor];
+    
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"模拟器没有摄像头功能" message:@"请使用真机测试" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"好的", nil];
     
     [alertView show];
