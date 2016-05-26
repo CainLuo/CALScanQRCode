@@ -15,12 +15,22 @@
 #define CALNavigationBarHeight  (44.0f)
 #define CALGetMethodReturnObjc(objc) if (objc) return objc
 
+#define CAL_TOP_VIEW_HEIGHT (self.frame.size.height - self.scanQRCodePickBackgroundImageView.frame.size.height - CALNavigationBarHeight - CALStatusBarHeight) / 2)
+#define CAL_BOTTOM_VIEW_HEIGHT self.frame.size.height - CGRectGetMaxY(self.scanQRCodePickBackgroundImageView.frame))
+
+#define MARGIN_VIEWS_COLOR [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4]
+
 @interface CALScanQRCodeCameraView()
 
 @property (nonatomic, strong) UILabel          *tipsLabel;
 @property (nonatomic, strong) UIImageView      *lineImageView;
 @property (nonatomic, strong) UIImageView      *scanQRCodePickBackgroundImageView;
 @property (nonatomic, strong) CABasicAnimation *lineImageViewAnimation;
+
+@property (nonatomic, strong) CALayer *topLayer;
+@property (nonatomic, strong) CALayer *leftLayer;
+@property (nonatomic, strong) CALayer *bottomLayer;
+@property (nonatomic, strong) CALayer *rightLayer;
 
 @end
 
@@ -36,6 +46,11 @@
         [self addSubview:self.tipsLabel];
         [self addSubview:self.lineImageView];
         
+        [self.layer addSublayer:self.topLayer];
+        [self.layer addSublayer:self.leftLayer];
+        [self.layer addSublayer:self.bottomLayer];
+        [self.layer addSublayer:self.rightLayer];
+        
         [self startAnimation];
     }
     
@@ -48,7 +63,7 @@
     CALGetMethodReturnObjc(_scanQRCodePickBackgroundImageView);
     
     _scanQRCodePickBackgroundImageView       = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"CALScanQRCode.bundle/scan_pick_bg"]];
-    _scanQRCodePickBackgroundImageView.frame = CGRectMake(self.center.x / 4, self.center.y / 3.5, CALScreenWidth - 80, CALScreenWidth - 80);
+    _scanQRCodePickBackgroundImageView.frame = CGRectMake(self.center.x - ((CALScreenWidth - 80) / 2), self.center.y / 3.5, CALScreenWidth - 80, CALScreenWidth - 80);
     
     return _scanQRCodePickBackgroundImageView;
 }
@@ -78,6 +93,55 @@
     [self.scanQRCodePickBackgroundImageView addSubview:_lineImageView];
     
     return _lineImageView;
+}
+
+#pragma mark - Set Margin Views
+- (CALayer *)topLayer {
+
+    CALGetMethodReturnObjc(_topLayer);
+    
+    _topLayer       = [CALayer layer];
+    _topLayer.frame = CGRectMake(0, 0, CALScreenWidth, CGRectGetMinY(self.scanQRCodePickBackgroundImageView.frame));
+    
+    _topLayer.backgroundColor = MARGIN_VIEWS_COLOR.CGColor;
+    
+    return _topLayer;
+}
+
+- (CALayer *)leftLayer {
+    
+    CALGetMethodReturnObjc(_leftLayer);
+    
+    _leftLayer       = [CALayer layer];
+    _leftLayer.frame = CGRectMake(0, CGRectGetMinY(self.scanQRCodePickBackgroundImageView.frame), CGRectGetMinX(self.scanQRCodePickBackgroundImageView.frame), CALScreenWidth - 80);
+    
+    _leftLayer.backgroundColor = MARGIN_VIEWS_COLOR.CGColor;
+    
+    return _leftLayer;
+}
+
+- (CALayer *)bottomLayer {
+    
+    CALGetMethodReturnObjc(_bottomLayer);
+    
+    _bottomLayer       = [CALayer layer];
+    _bottomLayer.frame = CGRectMake(0, CGRectGetMaxY(self.scanQRCodePickBackgroundImageView.frame), CALScreenWidth, CAL_BOTTOM_VIEW_HEIGHT;
+                                   
+    _bottomLayer.backgroundColor = MARGIN_VIEWS_COLOR.CGColor;
+    
+    return _bottomLayer;
+}
+
+- (CALayer *)rightLayer {
+
+    CALGetMethodReturnObjc(_rightLayer);
+    
+    _rightLayer       = [CALayer layer];
+    _rightLayer.frame = CGRectMake(CGRectGetMaxX(self.scanQRCodePickBackgroundImageView.frame), CGRectGetMinY(self.scanQRCodePickBackgroundImageView.frame), CGRectGetMinX(self.scanQRCodePickBackgroundImageView.frame), CALScreenWidth - 80);
+    
+    _rightLayer.backgroundColor = MARGIN_VIEWS_COLOR.CGColor;
+
+    return _rightLayer;
 }
 
 #pragma mark - Set Tips Label Text
