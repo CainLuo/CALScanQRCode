@@ -37,7 +37,7 @@ Cain(罗家辉)
 
 ### 获取数据
 
-在**`Controller`**当中, 我提供了两个**`Block`**函数, 用来获取纯字符串数据和整个扫码数组的数据, 前提当然是要继承与CALScanQRCodeViewController`**才可以这么写:
+在**`Controller`**当中, 我提供了两个**`Block`**函数, 用来获取纯字符串数据和整个扫码数组的数据, 前提当然是要继承与**`CALScanQRCodeViewController`**才可以这么写:
 
 ```objective-c
 [self setCALScanQRCodeGetMetadataStringValue:^(NSString *stringValue) {
@@ -81,7 +81,7 @@ AVMetadataObjectTypeDataMatrixCode
 
 ### 特别注意:
 
-如果你需要更改摄像头的对焦Y轴, 你可以在项目中找到以下的代码, 把它的**`Y`**轴设置成你要偏移的位置就可以了.
+如果你需要更改摄像头的对焦**`Y`**轴, 你可以在项目中找到以下的代码, 把它的**`Y`**轴设置成你要偏移的位置就可以了.
 
 ```objective-c
 //    _captureMetadataOutPut.rectOfInterest = CGRectMake(0, 0, CALScreenWidth, CALScreenHeight);
