@@ -16,8 +16,8 @@
  * AVMetadataMachineReadableCodeObject * metadataObject = [metadataObjects objectAtIndex:0];
  * NSString *stringValue = metadataObject.stringValue;
  */
-@property (nonatomic, copy) void(^CALScanQRCodeGetMetadataObjectsBlock)(NSArray *metadataObjects);
+@property (nonatomic, copy) void(^calScanQRCodeGetMetadataObjectsBlock)(NSArray *metadataObjects);
 
-@property (nonatomic, copy) void(^CALScanQRCodeGetMetadataStringValue)(NSString *metadataObject);
+@property (nonatomic, copy) void(^calScanQRCodeGetMetadataStringValue)(NSString *metadataObject);
 
 @end

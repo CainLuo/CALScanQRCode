@@ -45,7 +45,11 @@
     
     self.view.backgroundColor = [UIColor blackColor];
     
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"模拟器没有摄像头功能" message:@"请使用真机测试" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"好的", nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"模拟器没有摄像头功能"
+                                                        message:@"请使用真机测试"
+                                                       delegate:nil
+                                              cancelButtonTitle:nil
+                                              otherButtonTitles:@"好的", nil];
     
     [alertView show];
     
@@ -115,8 +119,13 @@
         
         NSString *stringValue = metadataObject.stringValue;
        
-        self.CALScanQRCodeGetMetadataObjectsBlock(metadataObjects);
-        self.CALScanQRCodeGetMetadataStringValue(stringValue);
+        if (self.calScanQRCodeGetMetadataObjectsBlock) {
+            self.calScanQRCodeGetMetadataObjectsBlock(metadataObjects);
+        }
+        
+        if (self.calScanQRCodeGetMetadataStringValue) {
+            self.calScanQRCodeGetMetadataStringValue(stringValue);
+        }
         
         [self.cameraView stopAnimation];
     }

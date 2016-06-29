@@ -27,10 +27,10 @@
 @property (nonatomic, strong) UIImageView      *scanQRCodePickBackgroundImageView;
 @property (nonatomic, strong) CABasicAnimation *lineImageViewAnimation;
 
-@property (nonatomic, strong) CALayer *topLayer;
-@property (nonatomic, strong) CALayer *leftLayer;
-@property (nonatomic, strong) CALayer *bottomLayer;
-@property (nonatomic, strong) CALayer *rightLayer;
+@property (nonatomic, strong) UIView *topView;
+@property (nonatomic, strong) UIView *leftView;
+@property (nonatomic, strong) UIView *bottomView;
+@property (nonatomic, strong) UIView *rightView;
 
 @end
 
@@ -45,11 +45,10 @@
         [self addSubview:self.scanQRCodePickBackgroundImageView];
         [self addSubview:self.tipsLabel];
         [self addSubview:self.lineImageView];
-        
-        [self.layer addSublayer:self.topLayer];
-        [self.layer addSublayer:self.leftLayer];
-        [self.layer addSublayer:self.bottomLayer];
-        [self.layer addSublayer:self.rightLayer];
+        [self addSubview:self.topView];
+        [self addSubview:self.leftView];
+        [self addSubview:self.bottomView];
+        [self addSubview:self.rightView];
         
         [self startAnimation];
     }
@@ -96,52 +95,46 @@
 }
 
 #pragma mark - Set Margin Views
-- (CALayer *)topLayer {
+- (UIView *)topView {
 
-    CALGetMethodReturnObjc(_topLayer);
+    CALGetMethodReturnObjc(_topView);
     
-    _topLayer       = [CALayer layer];
-    _topLayer.frame = CGRectMake(0, 0, CALScreenWidth, CGRectGetMinY(self.scanQRCodePickBackgroundImageView.frame));
+    _topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CALScreenWidth, CGRectGetMinY(self.scanQRCodePickBackgroundImageView.frame))];
+    _topView.backgroundColor = MARGIN_VIEWS_COLOR;
     
-    _topLayer.backgroundColor = MARGIN_VIEWS_COLOR.CGColor;
-    
-    return _topLayer;
+    return _topView;
 }
 
-- (CALayer *)leftLayer {
+- (UIView *)leftView {
     
-    CALGetMethodReturnObjc(_leftLayer);
+    CALGetMethodReturnObjc(_leftView);
     
-    _leftLayer       = [CALayer layer];
-    _leftLayer.frame = CGRectMake(0, CGRectGetMinY(self.scanQRCodePickBackgroundImageView.frame), CGRectGetMinX(self.scanQRCodePickBackgroundImageView.frame), CALScreenWidth - 80);
+    _leftView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMinY(self.scanQRCodePickBackgroundImageView.frame), CGRectGetMinX(self.scanQRCodePickBackgroundImageView.frame), CALScreenWidth - 80)];
     
-    _leftLayer.backgroundColor = MARGIN_VIEWS_COLOR.CGColor;
+    _leftView.backgroundColor = MARGIN_VIEWS_COLOR;
     
-    return _leftLayer;
+    return _leftView;
 }
 
-- (CALayer *)bottomLayer {
+- (UIView *)bottomView {
     
-    CALGetMethodReturnObjc(_bottomLayer);
+    CALGetMethodReturnObjc(_bottomView);
     
-    _bottomLayer       = [CALayer layer];
-    _bottomLayer.frame = CGRectMake(0, CGRectGetMaxY(self.scanQRCodePickBackgroundImageView.frame), CALScreenWidth, CAL_BOTTOM_VIEW_HEIGHT;
-                                   
-    _bottomLayer.backgroundColor = MARGIN_VIEWS_COLOR.CGColor;
+    _bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.scanQRCodePickBackgroundImageView.frame), CALScreenWidth, CAL_BOTTOM_VIEW_HEIGHT];
+    _bottomView.backgroundColor = MARGIN_VIEWS_COLOR;
     
-    return _bottomLayer;
+    return _bottomView;
 }
 
-- (CALayer *)rightLayer {
+- (UIView *)rightView {
 
-    CALGetMethodReturnObjc(_rightLayer);
+    CALGetMethodReturnObjc(_rightView);
     
-    _rightLayer       = [CALayer layer];
-    _rightLayer.frame = CGRectMake(CGRectGetMaxX(self.scanQRCodePickBackgroundImageView.frame), CGRectGetMinY(self.scanQRCodePickBackgroundImageView.frame), CGRectGetMinX(self.scanQRCodePickBackgroundImageView.frame), CALScreenWidth - 80);
+    _rightView = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.scanQRCodePickBackgroundImageView.frame), CGRectGetMinY(self.scanQRCodePickBackgroundImageView.frame), CGRectGetMinX(self.scanQRCodePickBackgroundImageView.frame), CALScreenWidth - 80)];
     
-    _rightLayer.backgroundColor = MARGIN_VIEWS_COLOR.CGColor;
+    _rightView.backgroundColor = MARGIN_VIEWS_COLOR;
 
-    return _rightLayer;
+    return _rightView;
 }
 
 #pragma mark - Set Tips Label Text

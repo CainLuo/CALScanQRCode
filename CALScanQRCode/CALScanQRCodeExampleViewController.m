@@ -17,12 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setCALScanQRCodeGetMetadataStringValue:^(NSString *stringValue) {
+    [self setCalScanQRCodeGetMetadataStringValue:^(NSString *stringValue) {
         
         NSLog(@"Scan Straing Value = %@", stringValue);
     }];
     
-    [self setCALScanQRCodeGetMetadataObjectsBlock:^(NSArray *array) {
+    [self setCalScanQRCodeGetMetadataObjectsBlock:^(NSArray *array) {
        
         NSLog(@"Scan array = %@", array);
     }];
