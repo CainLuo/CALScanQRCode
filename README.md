@@ -1,4 +1,4 @@
-# iOS学习：使用AVFoundation实现扫码
+# <p align="center">iOS学习：使用AVFoundation实现扫码</center>
 
 # 简介
 
@@ -30,7 +30,7 @@ Cain(罗家辉)
 
 `AVFoundation`在相关框架栈中的的位置：
 
-![1](./结构图.png)
+![1](https://github.com/CainRun/CALScanQRCode/blob/master/image-file/1.png)
 为了捕捉视频,我们需要这样几种类（与其它的子类）。
 
 > * `AVCaptureDevice` 代表了输入设备,例如摄像头与麦克风。
@@ -42,7 +42,7 @@ Cain(罗家辉)
 
 可以用这样一幅图来概述： 
 
-![2](./引导图.png)
+![2](https://github.com/CainRun/CALScanQRCode/blob/master/image-file/2.png)
 
 ---
 ## 例子
