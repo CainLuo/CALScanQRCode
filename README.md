@@ -1,3 +1,5 @@
+# <p align="center">玩转iOS开发：使用AVFoundation实现扫码</center>
+
 ###目录
 -	[简介](#简介)
 -	[作者感言](#作者感言)
