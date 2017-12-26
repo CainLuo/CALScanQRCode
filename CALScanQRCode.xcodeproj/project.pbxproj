@@ -7,61 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047F831C1FF22FB900785AFD /* CLScanQRCodeSourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F831B1FF22FB900785AFD /* CLScanQRCodeSourceController.m */; };
 		A4CB21151CD760FF00355140 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB21141CD760FF00355140 /* main.m */; };
 		A4CB21181CD760FF00355140 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB21171CD760FF00355140 /* AppDelegate.m */; };
-		A4CB211B1CD760FF00355140 /* CALScanQRCodeExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB211A1CD760FF00355140 /* CALScanQRCodeExampleViewController.m */; };
-		A4CB211E1CD760FF00355140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CB211C1CD760FF00355140 /* Main.storyboard */; };
+		A4CB211B1CD760FF00355140 /* CLScanQRCodeExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB211A1CD760FF00355140 /* CLScanQRCodeExampleController.m */; };
 		A4CB21201CD760FF00355140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CB211F1CD760FF00355140 /* Assets.xcassets */; };
 		A4CB21231CD760FF00355140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CB21211CD760FF00355140 /* LaunchScreen.storyboard */; };
-		A4CB212E1CD760FF00355140 /* CALScanQRCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB212D1CD760FF00355140 /* CALScanQRCodeTests.m */; };
-		A4CB21391CD760FF00355140 /* CALScanQRCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB21381CD760FF00355140 /* CALScanQRCodeUITests.m */; };
 		A4CB21661CD7618C00355140 /* CALScanQRCode.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A4CB21611CD7618C00355140 /* CALScanQRCode.bundle */; };
-		A4CB21691CD761B100355140 /* CALScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB21681CD761B100355140 /* CALScanQRCodeViewController.m */; };
-		A4CB216C1CD761BA00355140 /* CALScanQRCodeCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB216B1CD761BA00355140 /* CALScanQRCodeCameraView.m */; };
-		A4CB216F1CD761C100355140 /* CALScanQRCodeTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB216E1CD761C100355140 /* CALScanQRCodeTitleView.m */; };
+		A4CB21691CD761B100355140 /* CLScanQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB21681CD761B100355140 /* CLScanQRCodeController.m */; };
+		A4CB216C1CD761BA00355140 /* CLScanQRCodeCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CB216B1CD761BA00355140 /* CLScanQRCodeCameraView.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A4CB212A1CD760FF00355140 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4CB21081CD760FF00355140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4CB210F1CD760FF00355140;
-			remoteInfo = CALScanQRCode;
-		};
-		A4CB21351CD760FF00355140 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A4CB21081CD760FF00355140 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A4CB210F1CD760FF00355140;
-			remoteInfo = CALScanQRCode;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		047F831A1FF22FB900785AFD /* CLScanQRCodeSourceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLScanQRCodeSourceController.h; sourceTree = "<group>"; };
+		047F831B1FF22FB900785AFD /* CLScanQRCodeSourceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLScanQRCodeSourceController.m; sourceTree = "<group>"; };
 		A4CB21101CD760FF00355140 /* CALScanQRCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CALScanQRCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CB21141CD760FF00355140 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4CB21161CD760FF00355140 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A4CB21171CD760FF00355140 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A4CB21191CD760FF00355140 /* CALScanQRCodeExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CALScanQRCodeExampleViewController.h; sourceTree = "<group>"; };
-		A4CB211A1CD760FF00355140 /* CALScanQRCodeExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALScanQRCodeExampleViewController.m; sourceTree = "<group>"; };
-		A4CB211D1CD760FF00355140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4CB21191CD760FF00355140 /* CLScanQRCodeExampleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLScanQRCodeExampleController.h; sourceTree = "<group>"; };
+		A4CB211A1CD760FF00355140 /* CLScanQRCodeExampleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLScanQRCodeExampleController.m; sourceTree = "<group>"; };
 		A4CB211F1CD760FF00355140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4CB21221CD760FF00355140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4CB21241CD760FF00355140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4CB21291CD760FF00355140 /* CALScanQRCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CALScanQRCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4CB212D1CD760FF00355140 /* CALScanQRCodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALScanQRCodeTests.m; sourceTree = "<group>"; };
-		A4CB212F1CD760FF00355140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A4CB21341CD760FF00355140 /* CALScanQRCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CALScanQRCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4CB21381CD760FF00355140 /* CALScanQRCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CALScanQRCodeUITests.m; sourceTree = "<group>"; };
-		A4CB213A1CD760FF00355140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CB21611CD7618C00355140 /* CALScanQRCode.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CALScanQRCode.bundle; sourceTree = "<group>"; };
-		A4CB21671CD761B100355140 /* CALScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALScanQRCodeViewController.h; sourceTree = "<group>"; };
-		A4CB21681CD761B100355140 /* CALScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALScanQRCodeViewController.m; sourceTree = "<group>"; };
-		A4CB216A1CD761BA00355140 /* CALScanQRCodeCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALScanQRCodeCameraView.h; sourceTree = "<group>"; };
-		A4CB216B1CD761BA00355140 /* CALScanQRCodeCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALScanQRCodeCameraView.m; sourceTree = "<group>"; };
-		A4CB216D1CD761C100355140 /* CALScanQRCodeTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALScanQRCodeTitleView.h; sourceTree = "<group>"; };
-		A4CB216E1CD761C100355140 /* CALScanQRCodeTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALScanQRCodeTitleView.m; sourceTree = "<group>"; };
+		A4CB21671CD761B100355140 /* CLScanQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScanQRCodeController.h; sourceTree = "<group>"; };
+		A4CB21681CD761B100355140 /* CLScanQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScanQRCodeController.m; sourceTree = "<group>"; };
+		A4CB216A1CD761BA00355140 /* CLScanQRCodeCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScanQRCodeCameraView.h; sourceTree = "<group>"; };
+		A4CB216B1CD761BA00355140 /* CLScanQRCodeCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScanQRCodeCameraView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,29 +45,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4CB21261CD760FF00355140 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4CB21311CD760FF00355140 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047F83141FF22E3C00785AFD /* CLScanQRCodeController */ = {
+			isa = PBXGroup;
+			children = (
+				A4CB21191CD760FF00355140 /* CLScanQRCodeExampleController.h */,
+				A4CB211A1CD760FF00355140 /* CLScanQRCodeExampleController.m */,
+			);
+			path = CLScanQRCodeController;
+			sourceTree = "<group>";
+		};
+		047F83151FF22E5100785AFD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A4CB21161CD760FF00355140 /* AppDelegate.h */,
+				A4CB21171CD760FF00355140 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		047F83161FF22E6100785AFD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A4CB211F1CD760FF00355140 /* Assets.xcassets */,
+				A4CB21241CD760FF00355140 /* Info.plist */,
+				A4CB21211CD760FF00355140 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		047F83171FF22F8B00785AFD /* CLScanQRCodeSource */ = {
+			isa = PBXGroup;
+			children = (
+				047F83181FF22F9700785AFD /* CLScanQRCodeSourceController */,
+				047F83191FF22F9D00785AFD /* Views */,
+			);
+			path = CLScanQRCodeSource;
+			sourceTree = "<group>";
+		};
+		047F83181FF22F9700785AFD /* CLScanQRCodeSourceController */ = {
+			isa = PBXGroup;
+			children = (
+				047F831A1FF22FB900785AFD /* CLScanQRCodeSourceController.h */,
+				047F831B1FF22FB900785AFD /* CLScanQRCodeSourceController.m */,
+			);
+			path = CLScanQRCodeSourceController;
+			sourceTree = "<group>";
+		};
+		047F83191FF22F9D00785AFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A4CB21071CD760FF00355140 = {
 			isa = PBXGroup;
 			children = (
 				A4CB21121CD760FF00355140 /* CALScanQRCode */,
-				A4CB212C1CD760FF00355140 /* CALScanQRCodeTests */,
-				A4CB21371CD760FF00355140 /* CALScanQRCodeUITests */,
 				A4CB21111CD760FF00355140 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,8 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				A4CB21101CD760FF00355140 /* CALScanQRCode.app */,
-				A4CB21291CD760FF00355140 /* CALScanQRCodeTests.xctest */,
-				A4CB21341CD760FF00355140 /* CALScanQRCodeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,15 +120,11 @@
 		A4CB21121CD760FF00355140 /* CALScanQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				047F83151FF22E5100785AFD /* AppDelegate */,
 				A4CB21601CD7618C00355140 /* CALScanQRCode */,
-				A4CB21161CD760FF00355140 /* AppDelegate.h */,
-				A4CB21171CD760FF00355140 /* AppDelegate.m */,
-				A4CB21191CD760FF00355140 /* CALScanQRCodeExampleViewController.h */,
-				A4CB211A1CD760FF00355140 /* CALScanQRCodeExampleViewController.m */,
-				A4CB211C1CD760FF00355140 /* Main.storyboard */,
-				A4CB211F1CD760FF00355140 /* Assets.xcassets */,
-				A4CB21211CD760FF00355140 /* LaunchScreen.storyboard */,
-				A4CB21241CD760FF00355140 /* Info.plist */,
+				047F83141FF22E3C00785AFD /* CLScanQRCodeController */,
+				047F83171FF22F8B00785AFD /* CLScanQRCodeSource */,
+				047F83161FF22E6100785AFD /* Resource */,
 				A4CB21131CD760FF00355140 /* Supporting Files */,
 			);
 			path = CALScanQRCode;
@@ -132,24 +136,6 @@
 				A4CB21141CD760FF00355140 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A4CB212C1CD760FF00355140 /* CALScanQRCodeTests */ = {
-			isa = PBXGroup;
-			children = (
-				A4CB212D1CD760FF00355140 /* CALScanQRCodeTests.m */,
-				A4CB212F1CD760FF00355140 /* Info.plist */,
-			);
-			path = CALScanQRCodeTests;
-			sourceTree = "<group>";
-		};
-		A4CB21371CD760FF00355140 /* CALScanQRCodeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A4CB21381CD760FF00355140 /* CALScanQRCodeUITests.m */,
-				A4CB213A1CD760FF00355140 /* Info.plist */,
-			);
-			path = CALScanQRCodeUITests;
 			sourceTree = "<group>";
 		};
 		A4CB21601CD7618C00355140 /* CALScanQRCode */ = {
@@ -165,8 +151,8 @@
 		A4CB21621CD7618C00355140 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A4CB21671CD761B100355140 /* CALScanQRCodeViewController.h */,
-				A4CB21681CD761B100355140 /* CALScanQRCodeViewController.m */,
+				A4CB21671CD761B100355140 /* CLScanQRCodeController.h */,
+				A4CB21681CD761B100355140 /* CLScanQRCodeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,28 +160,18 @@
 		A4CB21631CD7618C00355140 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A4CB21641CD7618C00355140 /* CALScanQRCodeCameraView */,
-				A4CB21651CD7618C00355140 /* CALScanQRCodeTitleView */,
+				A4CB21641CD7618C00355140 /* CLScanQRCodeCameraView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A4CB21641CD7618C00355140 /* CALScanQRCodeCameraView */ = {
+		A4CB21641CD7618C00355140 /* CLScanQRCodeCameraView */ = {
 			isa = PBXGroup;
 			children = (
-				A4CB216A1CD761BA00355140 /* CALScanQRCodeCameraView.h */,
-				A4CB216B1CD761BA00355140 /* CALScanQRCodeCameraView.m */,
+				A4CB216A1CD761BA00355140 /* CLScanQRCodeCameraView.h */,
+				A4CB216B1CD761BA00355140 /* CLScanQRCodeCameraView.m */,
 			);
-			path = CALScanQRCodeCameraView;
-			sourceTree = "<group>";
-		};
-		A4CB21651CD7618C00355140 /* CALScanQRCodeTitleView */ = {
-			isa = PBXGroup;
-			children = (
-				A4CB216D1CD761C100355140 /* CALScanQRCodeTitleView.h */,
-				A4CB216E1CD761C100355140 /* CALScanQRCodeTitleView.m */,
-			);
-			path = CALScanQRCodeTitleView;
+			path = CLScanQRCodeCameraView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,42 +194,6 @@
 			productReference = A4CB21101CD760FF00355140 /* CALScanQRCode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A4CB21281CD760FF00355140 /* CALScanQRCodeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4CB21401CD760FF00355140 /* Build configuration list for PBXNativeTarget "CALScanQRCodeTests" */;
-			buildPhases = (
-				A4CB21251CD760FF00355140 /* Sources */,
-				A4CB21261CD760FF00355140 /* Frameworks */,
-				A4CB21271CD760FF00355140 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A4CB212B1CD760FF00355140 /* PBXTargetDependency */,
-			);
-			name = CALScanQRCodeTests;
-			productName = CALScanQRCodeTests;
-			productReference = A4CB21291CD760FF00355140 /* CALScanQRCodeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A4CB21331CD760FF00355140 /* CALScanQRCodeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4CB21431CD760FF00355140 /* Build configuration list for PBXNativeTarget "CALScanQRCodeUITests" */;
-			buildPhases = (
-				A4CB21301CD760FF00355140 /* Sources */,
-				A4CB21311CD760FF00355140 /* Frameworks */,
-				A4CB21321CD760FF00355140 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A4CB21361CD760FF00355140 /* PBXTargetDependency */,
-			);
-			name = CALScanQRCodeUITests;
-			productName = CALScanQRCodeUITests;
-			productReference = A4CB21341CD760FF00355140 /* CALScanQRCodeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,14 +205,7 @@
 				TargetAttributes = {
 					A4CB210F1CD760FF00355140 = {
 						CreatedOnToolsVersion = 7.3;
-					};
-					A4CB21281CD760FF00355140 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = A4CB210F1CD760FF00355140;
-					};
-					A4CB21331CD760FF00355140 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = A4CB210F1CD760FF00355140;
+						DevelopmentTeam = J26ST3TDCL;
 					};
 				};
 			};
@@ -290,8 +223,6 @@
 			projectRoot = "";
 			targets = (
 				A4CB210F1CD760FF00355140 /* CALScanQRCode */,
-				A4CB21281CD760FF00355140 /* CALScanQRCodeTests */,
-				A4CB21331CD760FF00355140 /* CALScanQRCodeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,22 +234,7 @@
 			files = (
 				A4CB21231CD760FF00355140 /* LaunchScreen.storyboard in Resources */,
 				A4CB21201CD760FF00355140 /* Assets.xcassets in Resources */,
-				A4CB211E1CD760FF00355140 /* Main.storyboard in Resources */,
 				A4CB21661CD7618C00355140 /* CALScanQRCode.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4CB21271CD760FF00355140 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4CB21321CD760FF00355140 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,55 +245,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4CB211B1CD760FF00355140 /* CALScanQRCodeExampleViewController.m in Sources */,
-				A4CB216F1CD761C100355140 /* CALScanQRCodeTitleView.m in Sources */,
+				A4CB211B1CD760FF00355140 /* CLScanQRCodeExampleController.m in Sources */,
 				A4CB21181CD760FF00355140 /* AppDelegate.m in Sources */,
-				A4CB21691CD761B100355140 /* CALScanQRCodeViewController.m in Sources */,
-				A4CB216C1CD761BA00355140 /* CALScanQRCodeCameraView.m in Sources */,
+				047F831C1FF22FB900785AFD /* CLScanQRCodeSourceController.m in Sources */,
+				A4CB21691CD761B100355140 /* CLScanQRCodeController.m in Sources */,
+				A4CB216C1CD761BA00355140 /* CLScanQRCodeCameraView.m in Sources */,
 				A4CB21151CD760FF00355140 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4CB21251CD760FF00355140 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4CB212E1CD760FF00355140 /* CALScanQRCodeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4CB21301CD760FF00355140 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A4CB21391CD760FF00355140 /* CALScanQRCodeUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		A4CB212B1CD760FF00355140 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A4CB210F1CD760FF00355140 /* CALScanQRCode */;
-			targetProxy = A4CB212A1CD760FF00355140 /* PBXContainerItemProxy */;
-		};
-		A4CB21361CD760FF00355140 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A4CB210F1CD760FF00355140 /* CALScanQRCode */;
-			targetProxy = A4CB21351CD760FF00355140 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		A4CB211C1CD760FF00355140 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4CB211D1CD760FF00355140 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A4CB21211CD760FF00355140 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -477,10 +356,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CALScanQRCode/Info.plist;
+				DEVELOPMENT_TEAM = J26ST3TDCL;
+				INFOPLIST_FILE = "$(SRCROOT)/CALScanQRCode/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cain.CALScanQRCode;
+				PRODUCT_BUNDLE_IDENTIFIER = cain.CALScanQRCode.estonger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -489,57 +369,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = CALScanQRCode/Info.plist;
+				DEVELOPMENT_TEAM = J26ST3TDCL;
+				INFOPLIST_FILE = "$(SRCROOT)/CALScanQRCode/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cain.CALScanQRCode;
+				PRODUCT_BUNDLE_IDENTIFIER = cain.CALScanQRCode.estonger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		A4CB21411CD760FF00355140 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CALScanQRCodeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cain.CALScanQRCodeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CALScanQRCode.app/CALScanQRCode";
-			};
-			name = Debug;
-		};
-		A4CB21421CD760FF00355140 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CALScanQRCodeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cain.CALScanQRCodeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CALScanQRCode.app/CALScanQRCode";
-			};
-			name = Release;
-		};
-		A4CB21441CD760FF00355140 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CALScanQRCodeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cain.CALScanQRCodeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = CALScanQRCode;
-			};
-			name = Debug;
-		};
-		A4CB21451CD760FF00355140 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = CALScanQRCodeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cain.CALScanQRCodeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = CALScanQRCode;
 			};
 			name = Release;
 		};
@@ -560,24 +395,6 @@
 			buildConfigurations = (
 				A4CB213E1CD760FF00355140 /* Debug */,
 				A4CB213F1CD760FF00355140 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A4CB21401CD760FF00355140 /* Build configuration list for PBXNativeTarget "CALScanQRCodeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4CB21411CD760FF00355140 /* Debug */,
-				A4CB21421CD760FF00355140 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A4CB21431CD760FF00355140 /* Build configuration list for PBXNativeTarget "CALScanQRCodeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4CB21441CD760FF00355140 /* Debug */,
-				A4CB21451CD760FF00355140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
